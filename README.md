@@ -2,7 +2,7 @@
 
 Proposta de site e identidade visual para a jornalista e editora de vídeo Bruna Festa. Referência: https://brunafesta.carrd.co/.
 
-**Estado:** publicado no GitHub Pages (repositório público `Raiugami/brunafesta-site`). Link: https://brunafesta.imaguiar.com.br/ (depende do registro CNAME na Cloudflare; enquanto isso: https://raiugami.github.io/brunafesta-site/). A versão Carrd não foi modificada.
+**Estado:** publicado no GitHub Pages (repositório público `Raiugami/brunafesta-site`). Link: https://raiugami.github.io/brunafesta-site/. O domínio `brunafesta.imaguiar.com.br` será ligado depois, quando o registro CNAME existir na Cloudflare (recolocar o arquivo `CNAME`). A versão Carrd não foi modificada.
 
 ## Visualizar
 
