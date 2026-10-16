@@ -31,11 +31,26 @@ A assinatura `bf✳` é uma proposta tipográfica de navegação. O nome complet
 ## Composição da página
 
 1. Capa com nome em grande escala por trás da foto centralizada de Bruna, conforme direção solicitada pelo proprietário após avaliar a primeira proposta. O retrato sem fundo foi restaurado com IA a pedido dele; o master fica preservado e a página usa uma versão WebP leve. A colagem inicial foi substituída por essa composição.
-2. Curadoria com oito trabalhos iniciais, alternando formatos e temas. Filtros Todos/Texto/Vídeo/Áudio e botão para ampliar a seleção.
+2. Curadoria com nove trabalhos iniciais no desktop e oito no celular, alternando formatos e temas para preencher as linhas da grade. Filtros Todos/Texto/Vídeo/Áudio e botão para ampliar a seleção.
 3. Índice pesquisável com todos os 41 títulos, veículos, datas e destinos originais.
-4. Biografia com fotografia já pública, formação e trajetória.
+4. Biografia com formação e trajetória; o Perfil mantém seu layout original e mostra um retrato sem moldura na coluna da esquerda.
 5. Repertório pessoal com interesses declarados, para dar contexto ao olhar da autora.
-6. Contato direto por e-mail e botão de copiar endereço.
+6. Contato direto por ícones clicáveis de e-mail e TikTok.
+
+## Exploração visual: jornal contemporâneo
+
+Em 16/10/2026 foi criada uma prévia local de uma segunda direção, após o proprietário informar que Bruna gosta da estética de jornal e pedir uma referência próxima ao New York Times. A proposta usa convenções editoriais amplas sem reproduzir o logotipo, a tipografia proprietária ou a composição de uma edição específica:
+
+- Nome da jornalista como masthead central, em serifada de alto contraste.
+- Capa com Bruna em primeiro plano e seu nome grande atrás, mantendo a composição já escolhida.
+- Filetes, editorias, datas do acervo e numeração para organizar o percurso.
+- Manchetes serifadas; metadados pequenos em caixa alta; arquivo apresentado como páginas de uma publicação.
+- Papel claro, tinta escura e vinho como acento, com fotografia levemente dessaturada.
+- Perfil e contato voltam ao papel claro, dando continuidade à linguagem de publicação.
+- Na seção Perfil, uma textura de jornal de baixo contraste sugere colunas tipográficas, filetes e retícula sem competir com o retrato nem prejudicar a leitura.
+- O masthead usa UnifrakturCook, uma fonte blackletter aberta, como aproximação visual da assinatura de jornal. O nome e a identidade do New York Times são proprietários; a proposta não usa seus arquivos de fonte nem reproduz seu logotipo.
+
+É um conceito para avaliação, não uma preferência confirmada pela cliente. Em 16/10/2026, o proprietário escolheu `assets/bruna-festa-recorte-jornal.png` como retrato da capa, pediu as íris azul-acinzentadas e forneceu fotos para corrigir as tatuagens. A imagem ativa é `assets/bruna-festa-recorte-jornal-tatuagens-integradas.webp`; as tatuagens dos dois braços seguem os mockups enviados pelo proprietário, com fundo transparente e sem bordas de recorte. O retrato original continua preservado. Para o Perfil, o proprietário escolheu a foto mais recente e pediu um ajuste sutil de frizz, sem trocar a pessoa, roupa ou enquadramento; ela substitui o carrossel. Os três recortes anteriores continuam arquivados. O botão de exploração foi afastado da foto com mais espaço no rodapé da capa. A foto da capa também leva ao Perfil. Os títulos, veículos, datas, fatos biográficos, links e contatos permanecem os dados documentados acima. O CSS fica isolado em `conceito-jornal.css` para facilitar ajustes após a avaliação. A publicação desta nova versão aguarda confirmação de nome/visibilidade do repositório e domínio, conforme as instruções do projeto.
 
 Sem inventar clientes, números de alcance, avaliações, disponibilidade, WhatsApp, prêmios ou novos serviços. A apresentação comercial usa apenas o e-mail público `bruna_festa@outlook.com`.
 
@@ -48,4 +63,4 @@ Sem inventar clientes, números de alcance, avaliações, disponibilidade, Whats
 
 ## Antes da publicação
 
-Apresentar o conceito e a prévia à cliente. Confirmar nome/visibilidade do repositório e domínio com o proprietário conforme `D:\Sites - Clientes\CLAUDE.md`. Não alterar o Carrd existente. Se a cliente tiver fotografia em maior resolução, substituir a versão de 225 px na seção biográfica. Confirmar cidade/região e eventuais contatos adicionais sem inventar dados.
+Apresentar o conceito e a prévia à cliente. Confirmar nome/visibilidade do repositório e domínio com o proprietário conforme `D:\Sites - Clientes\CLAUDE.md`. Não alterar o Carrd existente. A capa usa o recorte escolhido e corrigido pelo proprietário; o Perfil usa um único retrato recente com frizz suavizado. A fotografia pública original de 225 px continua preservada. Confirmar cidade/região e eventuais contatos adicionais sem inventar dados.
