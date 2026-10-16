@@ -1,0 +1,44 @@
+/* Capa escolhida pelo proprietário: retrato central à frente do nome. */
+.portrait-hero{position:relative;scroll-margin-top:0}
+.portrait-edition{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:50px;color:var(--muted);font-size:9px}
+.portrait-stage{position:relative;isolation:isolate;height:clamp(500px,calc(100svh - 217px),760px);overflow:hidden}
+.portrait-name{position:absolute;inset:61px 0 auto;margin:0;display:flex;justify-content:space-between;gap:42px;font-family:var(--display);font-weight:900;font-size:clamp(115px,18.2vw,270px);line-height:.84;letter-spacing:-.025em;white-space:nowrap;z-index:1}
+.portrait-name>span:last-child{color:var(--wine)}
+.portrait-name .name-period{color:var(--ink)}
+.hero-cutout{position:absolute;left:50%;bottom:0;height:100%;width:auto;max-width:none;object-fit:contain;transform:translateX(-50%);z-index:2;pointer-events:none}
+.portrait-halo{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:62%;height:78%;background:radial-gradient(ellipse at 50% 70%,#c5b6a74a 0%,#c5b6a70a 57%,transparent 75%);z-index:0;pointer-events:none}
+.portrait-side{position:absolute;bottom:62px;z-index:3;max-width:235px}
+.portrait-side-left{left:0}
+.portrait-side-left p{font-size:clamp(25px,2.3vw,31px);line-height:1.08;letter-spacing:-.045em}
+.portrait-side-left>span{display:block;margin-top:24px;font-size:8px;color:var(--muted)}
+.portrait-side-right{right:0;text-align:right}
+.portrait-side-right>span:first-child{color:var(--wine);font-size:8px}
+.portrait-side-right>p{margin-top:16px;font-size:12px;color:var(--muted);line-height:1.9}
+.portrait-side-rule{display:block;width:1px;height:42px;background:var(--wine);margin:22px 0 0 auto}
+.portrait-baseline{position:relative;display:flex;align-items:center;justify-content:space-between;gap:25px;border-top:1px solid var(--ink);min-height:62px;z-index:3}
+.portrait-baseline>p{font-size:8px;line-height:1.5;color:var(--muted)}
+.portrait-baseline>p:first-child{min-width:210px}
+.portrait-explore{display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--wine);color:var(--paper);padding:12px 18px;font-size:11px;margin-top:-1px;align-self:flex-start;min-width:210px}
+.portrait-explore>span:last-child{font-size:21px;line-height:1}
+.portrait-explore:hover{background:var(--ink)}
+.portrait-formats{min-width:210px;text-align:right}
+.portrait-formats i{font-style:normal;color:var(--wine);margin:0 9px}
+@media(min-width:1500px){.portrait-name{font-size:260px;top:85px}.portrait-side{bottom:88px}}
+@media(max-width:1000px) and (min-width:701px){.portrait-name{font-size:17.5vw;gap:20px;top:55px}.portrait-stage{height:clamp(500px,calc(100svh - 217px),700px)}.hero-cutout{height:94%}.portrait-side{display:none}.portrait-baseline>p:first-child,.portrait-formats{min-width:150px}.portrait-explore{min-width:180px;padding-inline:13px;gap:15px}}
+@media(max-width:700px){
+  .portrait-edition{min-height:43px;font-size:7px;letter-spacing:.04em;gap:12px}
+  .portrait-edition>span:last-child{display:none}
+  .portrait-stage{height:clamp(460px,calc(100svh - 188px),700px);overflow:hidden}
+  .portrait-name{top:16px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:0;font-size:31vw;line-height:.84;letter-spacing:-.025em;text-align:center}
+  .portrait-name>span:last-child{margin-top:2px}
+  .hero-cutout{height:75%;bottom:0}
+  .portrait-halo{width:150%;height:70%}
+  .portrait-side{display:none}
+  .portrait-baseline{min-height:65px;gap:14px;align-items:flex-start;justify-content:space-between}
+  .portrait-baseline>p:first-child{min-width:0;font-size:7px;line-height:1.6;padding-top:14px;max-width:140px;letter-spacing:.02em}
+  .portrait-explore{min-width:0;gap:17px;padding:14px 12px;font-size:10px;align-items:center;white-space:nowrap}
+  .portrait-explore>span:last-child{font-size:20px}
+  .portrait-formats{display:none}
+}
+@media(max-width:370px){.portrait-explore{font-size:9px;padding-inline:10px;gap:12px}.portrait-baseline>p:first-child{font-size:6px}.portrait-name{font-size:30.5vw}}
+@media(prefers-reduced-motion:reduce){.portrait-hero *{transition:none!important;animation:none!important}}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1eee6">
+  <meta name="description" content="Portfólio de Bruna Festa: jornalismo, edição de vídeo e cultura pop. Uma seleção de textos, vídeos e projetos em áudio.">
+  <title>Bruna Festa — Jornalismo, vídeo & cultura pop</title>
+  <meta property="og:title" content="Bruna Festa — Palavras, frames & outros universos">
+  <meta property="og:description" content="Jornalismo, edição de vídeo e cultura pop. Conheça os trabalhos de Bruna Festa.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/monograma.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/BarlowCondensed-Black.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero-portrait.css">
+  <script src="portfolio.data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header frame">
+    <a class="brand" href="#inicio" aria-label="Bruna Festa — início"><span class="monogram" aria-hidden="true">bf<span>✳</span></span><span class="brand-caption">JORNALISMO &<br>EDIÇÃO DE VÍDEO</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+    <nav id="navigation" aria-label="Navegação principal"><a href="#trabalhos">Trabalhos <sup>01</sup></a><a href="#sobre">Sobre mim <sup>02</sup></a><a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="conteudo">
+    <section class="portrait-hero frame" id="inicio" aria-labelledby="hero-title">
+      <div class="portrait-edition mono"><span>UM OLHAR CURIOSO SOBRE O MUNDO</span><span>JORNALISMO / VÍDEO / CULTURA POP</span></div>
+      <div class="portrait-stage">
+        <h1 class="portrait-name" id="hero-title" aria-label="Bruna Festa"><span>BRUNA</span><span>FESTA<span class="name-period">.</span></span></h1>
+        <div class="portrait-halo" aria-hidden="true"></div>
+        <img class="hero-cutout" src="assets/bruna-festa-recorte-web.webp" alt="Bruna Festa, jornalista e editora de vídeo." width="1254" height="1254" fetchpriority="high" decoding="async">
+        <div class="portrait-side portrait-side-left"><p class="serif">Palavras, frames<br>& outros<br><em>universos.</em></p><span class="mono">APURAR. EDITAR. CONTAR.</span></div>
+        <div class="portrait-side portrait-side-right"><span class="mono">PRAZER, BRUNA.</span><p>Jornalista.<br>Editora de vídeo.<br>Curiosa por natureza.</p><span class="portrait-side-rule" aria-hidden="true"></span></div>
+      </div>
+      <div class="portrait-baseline"><p class="mono">ENTRE A REDAÇÃO<br><span>E A CULTURA POP.</span></p><a class="portrait-explore" href="#trabalhos"><span>Explore meus trabalhos</span><span aria-hidden="true">↘</span></a><p class="mono portrait-formats">TEXTO <i>✳</i> VÍDEO <i>✳</i> ÁUDIO</p></div>
+    </section>
+
+    <section class="work-section frame" id="trabalhos" aria-labelledby="work-title">
+      <div class="section-label mono"><span>01 / TRABALHOS</span><span>SELEÇÃO EDITORIAL</span></div>
+      <div class="section-heading"><h2 class="serif" id="work-title">Histórias que<br>saíram <em>do papel.</em></h2><p>Uma seleção do que escrevi, editei e produzi.<br>Do universo dos games à notícia do dia.</p></div>
+      <div class="work-toolbar"><div class="filters" role="group" aria-label="Filtrar trabalhos por formato"><button type="button" data-filter="todos" aria-pressed="true">Todos <span>41</span></button><button type="button" data-filter="texto" aria-pressed="false">Texto <span>38</span></button><button type="button" data-filter="video" aria-pressed="false">Vídeo <span>02</span></button><button type="button" data-filter="audio" aria-pressed="false">Áudio <span>01</span></button></div><button class="archive-toggle mono" type="button" id="archive-toggle" aria-expanded="false" aria-controls="archive-panel">ÍNDICE COMPLETO <span aria-hidden="true">↗</span></button></div>
+      <p class="sr-only" id="work-status" role="status" aria-live="polite"></p>
+      <div class="work-grid" id="work-grid"></div>
+      <div class="work-end"><p class="mono" id="selection-note">UM RECORTE DO PORTFÓLIO.</p><button class="outline-button" type="button" id="show-more">Ver mais trabalhos <span aria-hidden="true">+</span></button></div>
+      <section class="archive" id="archive-panel" hidden aria-labelledby="archive-title"><div class="archive-heading"><h3 class="serif" id="archive-title">O arquivo.</h3><label class="search-label"><span class="mono">BUSCAR NO ACERVO</span><input id="archive-search" type="search" placeholder="Título, tema ou veículo" autocomplete="off"></label></div><p class="mono archive-count" id="archive-count" role="status"></p><div id="archive-list"></div></section>
+      <noscript><p>Explore os <a href="https://brunafesta.carrd.co/" target="_blank" rel="noopener noreferrer">trabalhos no portfólio original ↗</a>. Ative o JavaScript para usar os filtros desta versão.</p></noscript>
+    </section>
+
+    <section class="about-section" id="sobre" aria-labelledby="about-title"><div class="frame">
+      <div class="section-label mono"><span>02 / SOBRE MIM</span><span>POR TRÁS DAS PAUTAS</span></div>
+      <div class="about-grid">
+        <div class="portrait-column"><figure class="portrait"><img src="assets/bruna-festa.webp" alt="Bruna Festa, em fotografia de seu portfólio original." width="225" height="225" loading="lazy"><figcaption class="mono">BRUNA FESTA / JORNALISTA</figcaption></figure><span class="portrait-note serif" aria-hidden="true">prazer, Bruna.</span><div class="small-cross" aria-hidden="true">✳</div></div>
+        <div class="about-copy"><h2 class="serif" id="about-title">Apuração na cabeça.<br><em>Cultura pop na veia.</em></h2><p class="about-intro">Sou jornalista e editora de vídeo. Gosto de encontrar o fio da história — seja numa notícia, num jogo ou em alguns segundos de vídeo.</p><p>Me formei em Jornalismo pelo Mackenzie e fiz pós-graduação em Jornalismo em Plataformas Digitais na Cásper Líbero. Hoje trabalho de forma autônoma com edição de vídeo, com uma trajetória que também passa pela redação jornalística, publicidade e comunicação corporativa.</p><p>Já escrevi sobre games e animes na Black&CO, desenvolvi textos e campanhas na Human Link e atuei em assessoria de imprensa e comunicação institucional na 2M e Associados e na FapUnifesp. Na CNN Brasil, participei da apuração de fatos e da cobertura das eleições de 2022 durante meu estágio.</p><a class="text-link light-link" href="mailto:bruna_festa@outlook.com">Vamos trocar uma ideia <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="experience"><p class="mono">CAMINHOS QUE FAZEM PARTE DA MINHA HISTÓRIA</p><div class="experience-names"><span>CNN <small>BRASIL</small></span><span>Black&CO</span><span>Human Link</span><span>FapUnifesp</span><span>2M <small>E ASSOCIADOS</small></span></div></div>
+    </div></section>
+
+    <section class="references-section frame" aria-labelledby="references-title"><div class="section-label mono"><span>03 / FORA DO EXPEDIENTE</span><span>MEU REPERTÓRIO PESSOAL</span></div><div class="references-grid"><div><h2 class="serif" id="references-title">O que também<br><em>me move.</em></h2><p>Algumas histórias ficam com a gente<br>mesmo depois dos créditos.</p></div><dl class="references-list"><div><dt class="mono">NA ESTANTE</dt><dd>A Torre Negra <span>Stephen King</span></dd></div><div><dt class="mono">NO CONTROLE</dt><dd>Soulsborne <span>FromSoftware</span></dd></div><div><dt class="mono">NO FONE</dt><dd>Green Day <span>& My Chemical Romance</span></dd></div><div><dt class="mono">NO UNIVERSO DOS ANIMES</dt><dd>Gilgamesh <span>& Sukuna</span></dd></div></dl></div></section>
+
+    <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="frame"><div class="section-label mono"><span>04 / CONTATO</span><span>A PRÓXIMA HISTÓRIA COMEÇA AQUI</span></div><div class="contact-heading"><h2 id="contact-title">TEM UMA<br><span>BOA PAUTA?</span></h2><a class="contact-arrow" href="mailto:bruna_festa@outlook.com" aria-label="Enviar e-mail para Bruna Festa">↗</a></div><div class="contact-bottom"><p>Um projeto, uma ideia, uma conversa.<br>Me conta o que você tem em mente.</p><div class="email-block"><a href="mailto:bruna_festa@outlook.com">bruna_festa@outlook.com <span aria-hidden="true">↗</span></a><button class="mono" id="copy-email" type="button">COPIAR E-MAIL <span aria-hidden="true">⊕</span></button><span class="sr-only" id="copy-status" role="status"></span></div></div></div></section>
+  </main>
+  <footer class="site-footer frame"><a class="footer-signature" href="#inicio" aria-label="Bruna Festa — voltar ao início">bf<span aria-hidden="true">✳</span></a><p class="mono">BRUNA FESTA · JORNALISMO, VÍDEO & CULTURA POP</p><a class="mono" href="#inicio">DE VOLTA AO TOPO ↑</a></footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+preview-*.jpg
+preview-*.png
+.versions/
+motion-audits/
+node_modules/
+.env
+.env.*
+.mcp.json
+*.log
+Orçamento*.pdf
+Thumbs.db
+.DS_Store
+assets/bruna-festa-recorte-4k.png
