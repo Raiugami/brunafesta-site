@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Bruna Festa — Jornalismo, vídeo e cultura pop</title>
+  <desc id="description">Cartão editorial em papel marfim com o retrato de Bruna Festa e sua assinatura profissional.</desc>
+  <defs>
+    <pattern id="paper-lines" width="1200" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 17.5H1200" stroke="#776d5e" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#f1eee6"/>
+  <rect width="1200" height="630" fill="url(#paper-lines)"/>
+  <path d="M56 74H1144M56 570H1144" stroke="#29251f" stroke-opacity=".42"/>
+  <text x="60" y="58" fill="#4e473f" font-family="'Courier New',monospace" font-size="13" letter-spacing="2">PORTFÓLIO · JORNALISMO &amp; CULTURA</text>
+  <text x="1140" y="58" fill="#4e473f" font-family="'Courier New',monospace" font-size="13" letter-spacing="2" text-anchor="end">ARQUIVO 2022—2026</text>
+  <text x="58" y="263" fill="#211f1b" font-family="Georgia,'Times New Roman',serif" font-size="172" font-weight="700" letter-spacing="-12">BRUNA</text>
+  <text x="58" y="422" fill="#793346" font-family="Georgia,'Times New Roman',serif" font-size="158" font-style="italic" letter-spacing="-10">FESTA.</text>
+  <text x="65" y="486" fill="#211f1b" font-family="Georgia,'Times New Roman',serif" font-size="29" font-style="italic">Histórias bem contadas.</text>
+  <text x="65" y="540" fill="#4e473f" font-family="'Courier New',monospace" font-size="13" letter-spacing="2">JORNALISMO · VÍDEO · CULTURA POP</text>
+  <image x="658" y="78" width="560" height="492" href="bruna-festa-recorte-jornal-tatuagens-integradas.png" preserveAspectRatio="xMidYMax meet"/>
+</svg>

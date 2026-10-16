@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <pattern id="typeset" width="244" height="102" patternUnits="userSpaceOnUse">
+      <path d="M0 4h228M0 14h214M0 24h238M0 34h176M0 44h229M0 54h196M0 64h240M0 74h205M0 84h230M0 94h166" stroke="#595449" stroke-opacity=".1" stroke-width="1"/>
+    </pattern>
+    <pattern id="halftone" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r=".8" fill="#595449" fill-opacity=".1"/>
+    </pattern>
+  </defs>
+  <g opacity=".22">
+    <rect x="32" y="76" width="245" height="762" fill="url(#typeset)"/>
+    <rect x="302" y="126" width="245" height="712" fill="url(#typeset)"/>
+    <rect x="572" y="62" width="245" height="776" fill="url(#typeset)"/>
+    <rect x="842" y="112" width="245" height="726" fill="url(#typeset)"/>
+    <rect x="1112" y="86" width="245" height="752" fill="url(#typeset)"/>
+  </g>
+  <g stroke="#595449" stroke-opacity=".085">
+    <path d="M24 61h248M296 111h248M566 47h248M836 97h248M1106 71h248" stroke-width="2"/>
+    <path d="M286 50v790M556 100v740M826 36v804M1096 86v754" stroke-width=".8"/>
+    <path d="M24 851h1332" stroke-width="1"/>
+  </g>
+  <g opacity=".16">
+    <rect x="1110" y="700" width="245" height="138" fill="url(#halftone)"/>
+  </g>
+</svg>
