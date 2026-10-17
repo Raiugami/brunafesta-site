@@ -56,8 +56,6 @@
 .about-grid{border-bottom:1px solid var(--rule)}
 .portrait{box-shadow:2px 3px 0 #19181612;transform:rotate(-2deg)}
 .portrait figcaption{font-family:var(--mono);font-size:9px;letter-spacing:.07em}
-.about-copy>p{color:#504d47}
-.about-copy .about-intro{color:var(--ink)}
 .light-link{color:var(--ink);border-color:var(--wine)}
 .light-link:hover{color:var(--wine);border-color:var(--wine)}
 .experience{border-top:0;padding-top:12px}
@@ -70,14 +68,12 @@
 .contact-section::before{content:"";position:absolute;inset:0;z-index:-1;background:url('assets/jornal-textura.svg?v=2') center/cover no-repeat;opacity:.14;pointer-events:none}
 .contact-section .section-label{color:var(--muted)}
 .contact-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:clamp(24px,6vw,80px);border-color:var(--ink)}
-.contact-heading h2{font-family:var(--serif);font-weight:400;font-size:clamp(76px,10vw,138px);letter-spacing:-.07em;line-height:.92}
-.contact-heading h2 span{color:var(--wine);font-style:italic}
+.contact-heading h2{max-width:18ch;font-family:var(--serif);font-weight:400;font-size:clamp(48px,6.4vw,94px);letter-spacing:-.065em;line-height:.98}
+.contact-heading h2 em{color:var(--wine);font-style:italic}
 .contact-heading-note{max-width:180px;margin:0 0 9px;text-align:right;color:var(--wine);font-size:8px;line-height:1.8;letter-spacing:.1em}
 .contact-bottom{display:grid;grid-template-columns:minmax(190px,.72fr) minmax(360px,1.1fr);gap:clamp(30px,8vw,110px);align-items:start;padding-top:27px}
 .contact-intro{padding-top:12px}
 .contact-intro>p{color:var(--muted);font-size:13px;line-height:1.8}
-.contact-intro>p:first-child{max-width:360px;font-family:var(--serif);font-size:clamp(17px,1.8vw,22px);line-height:1.4;color:var(--ink)}
-.contact-intro>p:first-child em{color:var(--wine)}
 .contact-intro .contact-note{display:flex;align-items:center;gap:10px;margin-top:20px;padding-top:10px;border-top:1px solid var(--rule);font-size:8px;letter-spacing:.1em;color:var(--wine)}
 .contact-intro .contact-note::before{content:"";width:22px;height:1px;background:var(--wine)}
 .contact-methods{position:relative;display:flex;justify-content:flex-end;align-items:center;gap:13px;padding:20px 20px;border-bottom:1px solid var(--rule)}
@@ -159,14 +155,12 @@
   .references-section{padding-block:55px 58px}
   .contact-section{padding:32px 0 35px}
   .contact-heading{grid-template-columns:1fr;gap:10px;padding-top:7px;padding-bottom:22px}
-  .contact-heading h2{font-size:clamp(42px,13.4vw,68px);line-height:.96}
-  .contact-heading h2 span{white-space:nowrap}
+  .contact-heading h2{max-width:16ch;font-size:clamp(38px,10.2vw,52px);line-height:1.02}
   .contact-heading-note{justify-self:start;display:flex;align-items:center;gap:8px;max-width:none;margin:0;text-align:left;font-size:7px;line-height:1.5}
   .contact-heading-note::before{content:"";width:19px;height:1px;background:var(--wine)}
   .contact-bottom{grid-template-columns:1fr;gap:20px;padding-top:20px}
   .contact-intro{padding-top:0}
   .contact-intro>p{font-size:12px}
-  .contact-intro>p:first-child{font-size:18px}
   .contact-intro .contact-note{margin-top:12px;font-size:8px}
   .contact-methods{justify-content:flex-start;gap:14px;padding:19px 13px;border-bottom:0}
   .contact-methods::before,.contact-methods::after{right:auto;left:0;width:154px;height:82px}
@@ -191,8 +185,7 @@
 .about-section .portrait::before,.about-section .portrait::after{content:none;display:none}
 .about-section .portrait img{width:100%;height:auto;max-height:470px;aspect-ratio:3/4;object-fit:contain;filter:none}
 .about-section .portrait figcaption{margin-top:7px;padding:7px 0 0;border-top:1px solid var(--rule);font:8px/1.4 var(--mono);letter-spacing:.09em;color:var(--muted)}
-.about-section .about-copy h2{max-width:780px;margin-bottom:20px;font-size:clamp(42px,5.1vw,70px);line-height:.98;letter-spacing:-.06em}
-.about-section .about-copy .about-intro{max-width:720px;margin:0 0 20px;font:19px/1.45 var(--serif);color:var(--ink)}
+.about-section .about-copy h2{max-width:780px;margin-bottom:26px;font-size:clamp(34px,4.1vw,56px);line-height:1.04;letter-spacing:-.055em}
 .about-section .about-columns{columns:2;column-gap:26px;column-rule:1px solid rgba(70,67,60,.3);font-size:12px;line-height:1.75;color:#504d47}
 .about-section .about-columns p{margin:0 0 14px;break-inside:avoid}
 .about-section .light-link{margin-top:18px}
@@ -207,7 +200,6 @@
 .about-section.motion-ready .experience{opacity:0;transform:translateY(16px);transition:opacity 500ms linear,transform 620ms var(--print-ease)}
 .about-section.motion-ready .section-label>span,
 .about-section.motion-ready .portrait figcaption,
-.about-section.motion-ready .about-copy>p,
 .about-section.motion-ready .about-columns p,
 .about-section.motion-ready .about-copy .light-link,
 .about-section.motion-ready .experience>p,
@@ -221,7 +213,6 @@
 .about-section.is-printed .section-label::after{transform:scaleX(1)}
 .about-section.is-printed .section-label>span,
 .about-section.is-printed .portrait figcaption,
-.about-section.is-printed .about-copy>p,
 .about-section.is-printed .about-columns p,
 .about-section.is-printed .about-copy .light-link,
 .about-section.is-printed .experience>p,
@@ -231,7 +222,6 @@
 .about-section.is-printed .section-label>span:nth-child(2){transition-delay:70ms}
 .about-section.is-printed .portrait{transition-delay:70ms}
 .about-section.is-printed .about-copy>h2{transition-delay:180ms}
-.about-section.is-printed .about-copy .about-intro{transition-delay:420ms}
 .about-section.is-printed .about-columns p:first-child{transition-delay:550ms}
 .about-section.is-printed .about-columns p:last-child{transition-delay:650ms}
 .about-section.is-printed .about-copy .light-link{transition-delay:760ms}
@@ -248,8 +238,7 @@
   .about-section .portrait-column{width:min(100%,360px);align-self:center}
   .about-section .portrait{max-width:360px;align-self:center}
   .about-section .portrait figcaption{font-size:7px}
-  .about-section .about-copy h2{font-size:clamp(38px,9.6vw,54px);margin-bottom:17px}
-  .about-section .about-copy .about-intro{font-size:17px}
+  .about-section .about-copy h2{font-size:clamp(31px,8.3vw,40px);margin-bottom:21px}
   .about-section .about-columns{columns:1;column-rule:0;font-size:12px}
   .about-section .experience-names{justify-content:flex-start;gap:18px 24px}
 }
