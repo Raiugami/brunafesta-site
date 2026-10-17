@@ -1,0 +1,238 @@
+media:
+  input: assets/uploads
+  output: assets/uploads
+  rename: safe
+  extensions: [webp, jpg, jpeg, png]
+
+settings:
+  commit:
+    identity: user
+
+content:
+  - name: site
+    label: Textos e fotos do site
+    type: file
+    path: data/site-content.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: brand
+        label: Identidade
+        type: object
+        fields:
+          - name: tagline
+            label: Assinatura do topo
+            type: string
+      - name: hero
+        label: Capa
+        type: object
+        fields:
+          - name: editionLeft
+            label: Linha superior esquerda
+            type: string
+          - name: editionRight
+            label: Linha superior direita
+            type: string
+          - name: sideTitleLine1
+            label: Título lateral, linha 1
+            type: string
+          - name: sideTitleLine2
+            label: Título lateral, linha 2
+            type: string
+          - name: sideTitleEmphasis
+            label: Título lateral, trecho em destaque
+            type: string
+          - name: sideCaption
+            label: Legenda lateral
+            type: string
+          - name: profileNumber
+            label: Identificador do perfil
+            type: string
+          - name: roleFirstLine
+            label: Cargo, linha 1
+            type: string
+          - name: roleSecondLine
+            label: Cargo, linha 2
+            type: string
+          - name: baselineFirstLine
+            label: Rodapé da capa, linha 1
+            type: string
+          - name: baselineSecondLine
+            label: Rodapé da capa, linha 2
+            type: string
+          - name: formats
+            label: Formatos de trabalho
+            type: string
+          - name: portrait
+            label: Foto da capa
+            type: image
+      - name: archive
+        label: Arquivo de trabalhos
+        type: object
+        fields:
+          - name: sectionLabel
+            label: Identificação da seção
+            type: string
+          - name: period
+            label: Período do acervo
+            type: string
+          - name: titleFirstLine
+            label: Título, linha 1
+            type: string
+          - name: titleSecondLine
+            label: Título, linha 2
+            type: string
+          - name: titleEmphasis
+            label: Título, trecho em destaque
+            type: string
+          - name: descriptionLines
+            label: Texto de apresentação
+            type: text
+            list: true
+      - name: profile
+        label: Perfil
+        type: object
+        fields:
+          - name: sectionLabel
+            label: Identificação da seção
+            type: string
+          - name: sectionNote
+            label: Texto superior direito
+            type: string
+          - name: title
+            label: Título do perfil
+            type: text
+          - name: paragraphs
+            label: Parágrafos da biografia
+            type: text
+            list: true
+          - name: portrait
+            label: Foto do perfil
+            type: image
+          - name: portraitAlt
+            label: Descrição da foto do perfil
+            type: string
+          - name: cta
+            label: Texto do link de contato
+            type: string
+      - name: experience
+        label: Experiência
+        type: object
+        fields:
+          - name: label
+            label: Título da faixa
+            type: string
+          - name: organizations
+            label: Veículos e organizações
+            type: object
+            list: true
+            fields:
+              - name: name
+                label: Nome
+                type: string
+              - name: suffix
+                label: Complemento pequeno (opcional)
+                type: string
+      - name: references
+        label: Fora do expediente
+        type: object
+        fields:
+          - name: sectionLabel
+            label: Identificação da seção
+            type: string
+          - name: sectionNote
+            label: Texto superior direito
+            type: string
+          - name: titleFirstLine
+            label: Título, trecho inicial
+            type: string
+          - name: titleEmphasis
+            label: Título, trecho em destaque
+            type: string
+          - name: items
+            label: Referências pessoais
+            type: object
+            list: true
+            fields:
+              - name: category
+                label: Categoria
+                type: string
+              - name: title
+                label: Título ou referência
+                type: string
+              - name: subtitle
+                label: Complemento
+                type: string
+      - name: contact
+        label: Contato
+        type: object
+        fields:
+          - name: sectionLabel
+            label: Identificação da seção
+            type: string
+          - name: sectionNote
+            label: Texto superior direito
+            type: string
+          - name: titleEmphasis
+            label: Título, trecho em destaque
+            type: string
+          - name: titleRest
+            label: Complemento do título
+            type: string
+          - name: note
+            label: Legenda dos contatos
+            type: string
+          - name: email
+            label: E-mail
+            type: string
+          - name: tiktok
+            label: Link do TikTok
+            type: string
+  - name: works
+    label: Matérias e trabalhos
+    type: file
+    path: data/works.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: publisher
+        label: Veículo ou plataforma
+        type: string
+        required: true
+      - name: date
+        label: Data de publicação
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: format
+        label: Formato
+        type: select
+        options:
+          values:
+            - name: texto
+              label: Texto
+            - name: video
+              label: Vídeo
+            - name: audio
+              label: Áudio
+      - name: subject
+        label: Tema
+        type: string
+      - name: url
+        label: Link original
+        type: string
+        required: true
+        pattern:
+          regex: '^https://'
+          message: Use o link completo começando com https://
+      - name: image
+        label: Imagem de capa
+        type: image
+        description: Prefira WebP. A imagem pode ser enviada pelo próprio campo.
