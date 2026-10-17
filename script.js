@@ -14,9 +14,9 @@
 
   const [siteContent, loadedWorks] = await Promise.all([
     loadJson('data/site-content.json', {}),
-    loadJson('data/works.json', [])
+    loadJson('data/works.json', { items: [] })
   ]);
-  const works = Array.isArray(loadedWorks) ? loadedWorks : [];
+  const works = Array.isArray(loadedWorks?.items) ? loadedWorks.items : [];
   const labels = { texto:'Texto', video:'Vídeo', audio:'Áudio' };
   const escape = text => String(text ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 

@@ -22,7 +22,8 @@ assert p.h1==1, 'Conferir H1'
 assert all(x in p.ids for x in p.anchors), 'Ancora sem destino'
 assert all((ROOT/x).is_file() for x in p.paths), 'Arquivo local ausente'
 assert all('alt' in a and 'width' in a and 'height' in a for a in p.images), 'Imagem sem alt/dimensoes'
-works=json.loads((ROOT/'data/works.json').read_text(encoding='utf8'))
+works_data=json.loads((ROOT/'data/works.json').read_text(encoding='utf8'))
+works=works_data['items']
 content=json.loads((ROOT/'data/site-content.json').read_text(encoding='utf8'))
 assert len(works)==41
 assert all(urlsplit(x['url']).scheme=='https' for x in works)
