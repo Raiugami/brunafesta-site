@@ -4,8 +4,7 @@
 
 .site-header{min-height:142px;display:grid;grid-template-columns:1fr;grid-template-rows:83px 50px;align-items:center;justify-content:stretch;gap:0;padding-top:7px}
 .brand{grid-row:1;justify-self:center;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
-.masthead-name{font-family:UnifrakturCook,var(--serif);font-size:52px;line-height:1;font-weight:700;letter-spacing:0}
-.brand-caption{font-size:8px;letter-spacing:.16em}
+.brand-caption{font-family:UnifrakturCook,var(--serif);font-size:clamp(21px,2.3vw,30px);font-weight:700;letter-spacing:0;line-height:1.1}
 .site-header nav{grid-row:2;justify-self:stretch;justify-content:center;gap:clamp(24px,5vw,68px);height:100%;border-top:1px solid var(--rule);font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase}
 .site-header nav a{padding:12px 0}
 .site-header nav sup{font-size:7px}
@@ -113,7 +112,6 @@
 
 @media(max-width:1000px) and (min-width:701px){
   .site-header{min-height:137px;grid-template-rows:79px 48px}
-  .masthead-name{font-size:48px}
   .portrait-stage{height:clamp(480px,calc(100svh - 240px),660px)}
   .portrait-name{top:73px;font-size:13.4vw;letter-spacing:-.08em}
   .hero-cutout-link{height:94%}
@@ -121,8 +119,7 @@
 @media(max-width:700px){
   .site-header{display:flex;flex-direction:column;min-height:0;padding:10px 0 0;gap:10px;align-items:stretch}
   .brand{align-self:center;justify-self:auto;gap:7px}
-  .masthead-name{font-size:clamp(32px,8.8vw,36px)}
-  .brand-caption{font-size:6px;letter-spacing:.12em}
+  .brand-caption{font-size:clamp(16px,4.8vw,20px)}
   .menu-button{position:static;transform:none;align-self:stretch;justify-content:flex-end;width:100%;margin:0;border:0;border-top:1px solid var(--rule);font-family:var(--mono);font-size:8px;text-transform:uppercase;letter-spacing:.08em;gap:8px;padding:8px 0 9px}
   .site-header nav{grid-row:auto;display:none;position:absolute;top:calc(100% + 1px);left:-18px;right:-18px;height:auto;width:auto;background:var(--paper);z-index:15;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:18px;border-top:1px solid var(--rule);border-bottom:1px solid var(--ink);gap:9px}
   .site-header nav.is-open{display:flex}
@@ -178,7 +175,6 @@
   .contact-method-icon svg{width:22px;height:22px}
 }
 @media(max-width:370px){
-  .masthead-name{font-size:32px}
   .menu-button{font-size:7px}
   .portrait-name{font-size:27.5vw}
   .portrait-explore{font-size:7px}
