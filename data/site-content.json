@@ -1,0 +1,102 @@
+{
+  "brand": {
+    "tagline": "Jornalismo · Vídeo · Cultura pop"
+  },
+  "hero": {
+    "editionLeft": "PORTFÓLIO · JORNALISMO & CULTURA",
+    "editionRight": "ARQUIVO 2022—2026",
+    "sideTitleLine1": "Histórias",
+    "sideTitleLine2": "bem",
+    "sideTitleEmphasis": "contadas.",
+    "sideCaption": "APURAR · EDITAR · CONTAR",
+    "profileNumber": "PERFIL / 001",
+    "roleFirstLine": "Jornalista",
+    "roleSecondLine": "e editora de vídeo.",
+    "baselineFirstLine": "ENTRE A REDAÇÃO",
+    "baselineSecondLine": "E A CULTURA POP.",
+    "formats": "TEXTO · VÍDEO · ÁUDIO",
+    "portrait": "assets/bruna-festa-recorte-jornal-tatuagens-integradas.webp"
+  },
+  "archive": {
+    "sectionLabel": "01 / ARQUIVO",
+    "period": "MAIS RECENTES · 2022—2026",
+    "titleFirstLine": "Histórias para",
+    "titleSecondLine": "ler, ver",
+    "titleEmphasis": "e ouvir.",
+    "descriptionLines": [
+      "Reportagens, crítica cultural e projetos",
+      "em texto, vídeo e áudio."
+    ]
+  },
+  "profile": {
+    "sectionLabel": "02 / PERFIL",
+    "sectionNote": "POR TRÁS DAS PAUTAS",
+    "title": "Sou jornalista e editora de vídeo. Gosto de encontrar o fio da história, seja em uma notícia, em um jogo ou em alguns segundos de vídeo.",
+    "paragraphs": [
+      "Formei-me em Jornalismo pela Universidade Presbiteriana Mackenzie e fiz pós-graduação em Jornalismo em Plataformas Digitais pela Faculdade Cásper Líbero. Hoje trabalho de forma autônoma com edição de vídeo, em uma trajetória que também passa pela redação jornalística, pela publicidade e pela comunicação corporativa.",
+      "Já escrevi sobre jogos e animes na Black&CO, desenvolvi textos e campanhas na Human Link e atuei em assessoria de imprensa na 2M e Associados e em comunicação institucional na FapUnifesp. Durante o meu estágio na CNN Brasil, participei da apuração de fatos e da cobertura das eleições de 2022."
+    ],
+    "portrait": "assets/bruna-perfil-retrato-individual.webp",
+    "portraitAlt": "Retrato de Bruna Festa com franja e camiseta preta.",
+    "cta": "Vamos trocar uma ideia"
+  },
+  "experience": {
+    "label": "CAMINHOS QUE FAZEM PARTE DA MINHA HISTÓRIA",
+    "organizations": [
+      {
+        "name": "CNN",
+        "suffix": "BRASIL"
+      },
+      {
+        "name": "Black&CO"
+      },
+      {
+        "name": "Human Link"
+      },
+      {
+        "name": "FapUnifesp"
+      },
+      {
+        "name": "2M",
+        "suffix": "E ASSOCIADOS"
+      }
+    ]
+  },
+  "references": {
+    "sectionLabel": "03 / FORA DO EXPEDIENTE",
+    "sectionNote": "MEU REPERTÓRIO PESSOAL",
+    "titleFirstLine": "Algumas histórias ficam conosco",
+    "titleEmphasis": "mesmo depois dos créditos.",
+    "items": [
+      {
+        "category": "NA ESTANTE",
+        "title": "A Torre Negra",
+        "subtitle": "Stephen King"
+      },
+      {
+        "category": "NO CONTROLE",
+        "title": "Soulsborne",
+        "subtitle": "FromSoftware"
+      },
+      {
+        "category": "NO FONE",
+        "title": "Green Day",
+        "subtitle": "& My Chemical Romance"
+      },
+      {
+        "category": "NO UNIVERSO DOS ANIMES",
+        "title": "Gilgamesh",
+        "subtitle": "& Sukuna"
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "04 / CONTATO",
+    "sectionNote": "A PRÓXIMA HISTÓRIA COMEÇA AQUI",
+    "titleEmphasis": "Conte-me",
+    "titleRest": "o que você tem em mente.",
+    "note": "NOVAS HISTÓRIAS COMEÇAM POR AQUI",
+    "email": "bruna_festa@outlook.com",
+    "tiktok": "https://www.tiktok.com/@brunafesta_"
+  }
+}

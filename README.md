@@ -18,14 +18,17 @@ O site reúne os 41 trabalhos do portfólio original, com nove itens iniciais no
 
 ## Tecnologia e estrutura
 
-HTML, CSS, SVG e JavaScript puros, sem build ou serviços de terceiros no navegador.
+HTML, CSS, SVG e JavaScript puros. A página continua sem build; os textos e matérias são carregados de arquivos JSON para facilitar a edição no Pages CMS.
 
 - `index.html`: conteúdo e estrutura da página.
 - `style.css`: identidade, responsividade, estados de foco e preferência de movimento reduzido.
 - `hero-portrait.css`: capa com sobreposição de retrato e nome, incluindo versão de celular.
 - `conceito-jornal.css`: exploração editorial local, ainda não publicada.
-- `script.js`: filtros, acervo pesquisável, menu e paginação alinhada às colunas da grade.
-- `portfolio.data.js`: 41 registros de trabalhos, URLs originais e metadados.
+- `script.js`: carrega o conteúdo editável, atualiza a página e controla filtros, busca, menu e paginação.
+- `data/site-content.json`: textos, fotos e referências das seções.
+- `data/works.json`: matérias e trabalhos do acervo, ordenados por data.
+- `.pages.yml`: campos disponíveis para edição no Pages CMS.
+- `docs/EDITAR-CONTEUDO.md`: acesso ao CMS, configuração inicial e instruções para a Bruna.
 - `assets/`: retrato de capa com tatuagens corrigidas (PNG/WebP), retrato único do Perfil com frizz suavizado (PNG/WebP), fotografias anteriores arquivadas, textura editorial em SVG, favicon e fontes locais licenciadas.
 - `assets/bruna-festa-compartilhamento.png`: cartão social 1200 × 630; o SVG ao lado é sua fonte vetorial.
 - `robots.txt` e `sitemap.xml`: instruções de indexação e URL canônica do GitHub Pages.
@@ -39,6 +42,6 @@ HTML, CSS, SVG e JavaScript puros, sem build ou serviços de terceiros no navega
 
 `node --check script.js`
 
-`node --check portfolio.data.js`
+`node -e "for (const file of ['data/site-content.json','data/works.json']) JSON.parse(require('fs').readFileSync(file,'utf8')); console.log('JSON válido')"`
 
 Conferir também no navegador desktop e em 360/412 px: filtros, menu, índice/busca, ampliação do acervo, foco e contato. Não enviar e-mails de teste à cliente.
