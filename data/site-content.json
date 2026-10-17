@@ -1,6 +1,6 @@
 {
   "brand": {
-    "tagline": "Jornalismo · Vídeo · Cultura pop"
+    "tagline": "Jornalismo · Vídeo · Cultura pop · TESTE"
   },
   "hero": {
     "editionLeft": "PORTFÓLIO · JORNALISMO & CULTURA",
@@ -43,11 +43,23 @@
   "experience": {
     "label": "CAMINHOS QUE FAZEM PARTE DA MINHA HISTÓRIA",
     "organizations": [
-      { "name": "CNN", "suffix": "BRASIL" },
-      { "name": "Black&CO", "suffix": "" },
-      { "name": "Human Link", "suffix": "" },
-      { "name": "FapUnifesp", "suffix": "" },
-      { "name": "2M", "suffix": "E ASSOCIADOS" }
+      {
+        "name": "CNN",
+        "suffix": "BRASIL"
+      },
+      {
+        "name": "Black&CO"
+      },
+      {
+        "name": "Human Link"
+      },
+      {
+        "name": "FapUnifesp"
+      },
+      {
+        "name": "2M",
+        "suffix": "E ASSOCIADOS"
+      }
     ]
   },
   "references": {
@@ -56,10 +68,26 @@
     "titleFirstLine": "Algumas histórias ficam conosco",
     "titleEmphasis": "mesmo depois dos créditos.",
     "items": [
-      { "category": "NA ESTANTE", "title": "A Torre Negra", "subtitle": "Stephen King" },
-      { "category": "NO CONTROLE", "title": "Soulsborne", "subtitle": "FromSoftware" },
-      { "category": "NO FONE", "title": "Green Day", "subtitle": "& My Chemical Romance" },
-      { "category": "NO UNIVERSO DOS ANIMES", "title": "Gilgamesh", "subtitle": "& Sukuna" }
+      {
+        "category": "NA ESTANTE",
+        "title": "A Torre Negra",
+        "subtitle": "Stephen King"
+      },
+      {
+        "category": "NO CONTROLE",
+        "title": "Soulsborne",
+        "subtitle": "FromSoftware"
+      },
+      {
+        "category": "NO FONE",
+        "title": "Green Day",
+        "subtitle": "& My Chemical Romance"
+      },
+      {
+        "category": "NO UNIVERSO DOS ANIMES",
+        "title": "Gilgamesh",
+        "subtitle": "& Sukuna"
+      }
     ]
   },
   "contact": {
